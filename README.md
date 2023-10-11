@@ -25,6 +25,7 @@ Dataset
 
 - Follow the installation of ESPNet at https://github.com/espnet/espnet
 - Need to install Whisper in your venv
+- transformers==4.31.0
 - cd espnet && pip install -e ".[all]"
 ## Data Preparation
 ```shell
