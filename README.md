@@ -2,23 +2,19 @@
 
 ## Download dataset
 
-- You can use `rsync` to copy datasets from server.
+- You can use the `Preprocessing Scripts` in dynamic-superb/api
+/preprocess
+- You will get a DATA_DIR like
 
 ```
-Dataset
-├── big-superb-test-data-renamed
-│   ├── AccentClassification_AccentdbExtended
-│   ├── BirdSoundDetection_Warblrb10k
-│   ├── ChordClassification_AcousticGuitarAndPiano
-│   ├── ...
-└── big-superb-train-data-renamed
-    ├── DialogueActClassification_DailyTalk
-    ├── DialogueActPairing_DailyTalk
-    ├── DialogueEmotionClassification_DailyTalk
-    ├── EnhancementDetection_LibrittsTrainClean360Wham
-    ├── NoiseDetectionGaussian_VoxcelebMusan
-    ├── NoiseSNRLevelPredictionGaussian_VoxcelebMusan
-    ...
+DATA_DIR
+├── instance1
+│   ├── instance1_001.wav
+│   ├── instance1_002.wav
+│   ├── instance1_003.wav
+│   └── metadata.json
+├── instance2
+└── instance3
 ```
 
 ## Install
@@ -31,7 +27,7 @@ Dataset
 ```shell
 cd espnet/egs2/dynamic_superb
 ```
-Set up db.sh BIGSUPERB=path to big-superb-test-data-renamed
+Set up db.sh BIGSUPERB=`DATA_DIR`
 
 ```shell
 conda activate espnet
