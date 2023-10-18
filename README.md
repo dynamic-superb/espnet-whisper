@@ -25,7 +25,7 @@ DATA_DIR
 - cd espnet && pip install -e ".[all]"
 ## Data Preparation
 ```shell
-cd espnet/egs2/dynamic_superb
+cd espnet-whisper/egs2/dynamic_superb
 ```
 Set up db.sh BIGSUPERB=`DATA_DIR`
 
