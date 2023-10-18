@@ -23,8 +23,8 @@ def in_test_tasks(task):
     return False
 stop_root = sys.argv[1]
 split_dict = {
-    "train": "train",
-    "valid": "validation",
+    "train": "test",
+    "valid": "test",
     "test": "test",
 }
 
